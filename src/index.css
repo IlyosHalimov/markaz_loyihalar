@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ri-store-line{
+  color: #ffbb2c;
+}
+.ri-bar-chart-box-line{
+  color: #5578ff;
+}
+.ri-calendar-todo-line{
+  color: #e80368;
+}
+.ri-paint-brush-line{
+  color: #e361ff;
+}
+.ri-database-2-line{
+  color: #47aeff;
+}
+.ri-gradienter-line{
+  color: #ffa76e;
+}
+.ri-file-list-3-line{
+  color: #11dbcf;
+}
+.ri-price-tag-2-line{
+  color: #4233ff;
+}
+.ri-anchor-line{
+  color: #b2904f;
+}
+.ri-disc-line{
+  color: #b20969;
+}
+.ri-base-station-line{
+  color: #ff5828;
+}
+.ri-fingerprint-line{
+  color: #29cc61;
+}

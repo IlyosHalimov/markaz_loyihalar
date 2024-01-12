@@ -1,24 +1,49 @@
-import logo from './logo.svg';
 import './App.css';
+import './index.css';
+import About from './companents/about';
+import Contact from './companents/contact';
+import Counts from './companents/counts';
+import Courses from './companents/courses';
+import Features from './companents/features';
+import Footer from './companents/footer';
+import Hero from './companents/hero';
+import Navbar from './companents/navbar';
+import Trainers from './companents/trainers';
+import Whyus from './companents/whyus';
+import Pricing from "./companents/pricing";
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>
+   <Navbar />
+    <Hero />
+    <About />
+    <Counts />
+    <Whyus />
+    <Features />
+    <Courses />
+    <Trainers />
+    <Footer />
+    <Switch>
+        <Route path="/" exact component={Navbar} />
+        <Route path="/about.js" component={Hero} />
+        <Route path="/courses" component={About} />
+        {/* Define other routes here */}
+      </Switch>
+    </Router>
+    {/* <Pricing />
+    <Contact /> */}
+    {/* <Hero />
+    <About />
+    <Counts />
+    <Whyus />
+    <Features />
+    <Courses />
+    <Trainers />
+    <Footer /> */}
+    </>
   );
 }
 
