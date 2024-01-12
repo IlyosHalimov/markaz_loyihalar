@@ -4,18 +4,22 @@ function Hero() {
   const qiymat = [
     {
       id: "1",
-      text: <h1>Learning Today,<br />Leading Tomorrow</h1>
-    },
-    {
-      id: '2',
-      text1: "We are a team of talented designers making websites with Bootstrap"
-    },
-    {
-      id: "3",
+      text: <h1>Learning Today,<br />Leading Tomorrow</h1>,
+      text1: "We are a team of talented designers making websites with Bootstrap",
       btn: <a href="/courses.html" className="btn-get-started">
       Get Started
     </a>
-    }
+    }//,
+    // {
+    //   id: '2',
+    //   text1: "We are a team of talented designers making websites with Bootstrap"
+    // },
+    // {
+    //   id: "3",
+    //   btn: <a href="/courses.html" className="btn-get-started">
+    //   Get Started
+    //   </a>
+    // }
   ];
 
   return (

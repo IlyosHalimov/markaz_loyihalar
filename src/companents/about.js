@@ -54,7 +54,7 @@
 
 // About.js
 import React from 'react';
-import AboutItem from "./AboutItem";
+
 
 function About() {
   const qiymat = [
@@ -88,9 +88,9 @@ function About() {
             <img src={qiymat[4].img} className="img-fluid" alt="" />
           </div>
           <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <AboutItem text={qiymat[0].h3} />
+           {qiymat[0].h3}
             <p className="fst-italic">
-              <AboutItem text1={qiymat[1].p} />
+          {qiymat[1].p} 
             </p>
             <ul>
               <li><i className="bi bi-check-circle"></i> {qiymat[2].li}</li>

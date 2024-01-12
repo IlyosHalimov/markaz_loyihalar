@@ -1,4 +1,20 @@
+
 function Whyus() {
+  const qiymat =[
+    {
+      id:"1",
+      h3: "Why Choose Mentoffgdfr?",
+      p:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio a corporis.",
+      h41: "Corporis voluptates sit",
+      h42: "Ullamco laboris ladore pan",
+      h43: "Labore consequatur",
+      p2: "Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip",
+      p3:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt",
+      p4:"Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere",
+      a:<a href="about.html" className="more-btn">Learn More <i className="bx bx-chevron-right"></i></a>
+    }
+
+  ]
     return ( 
         <section id="why-us" className="why-us">
       <div className="container" data-aos="fade-up">
@@ -6,13 +22,12 @@ function Whyus() {
         <div className="row">
           <div className="col-lg-4 d-flex align-items-stretch">
             <div className="content">
-              <h3>Why Choose Mentor?</h3>
+              <h3>{qiymat[0].h3}</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                {qiymat[0].p}
               </p>
               <div className="text-center">
-                <a href="about.html" className="more-btn">Learn More <i className="bx bx-chevron-right"></i></a>
+                {qiymat[0].a}
               </div>
             </div>
           </div>
@@ -22,22 +37,22 @@ function Whyus() {
                 <div className="col-xl-4 d-flex align-items-stretch">
                   <div className="icon-box mt-4 mt-xl-0">
                     <i className="bx bx-receipt"></i>
-                    <h4>Corporis voluptates sit</h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                    <h4>{qiymat[0].h41}</h4>
+                    <p>{qiymat[0].p2}</p>
                   </div>
                 </div>
                 <div className="col-xl-4 d-flex align-items-stretch">
                   <div className="icon-box mt-4 mt-xl-0">
                     <i className="bx bx-cube-alt"></i>
-                    <h4>Ullamco laboris ladore pan</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <h4>{qiymat[0].h42}</h4>
+                    <p>{qiymat[0].p3}</p>
                   </div>
                 </div>
                 <div className="col-xl-4 d-flex align-items-stretch">
                   <div className="icon-box mt-4 mt-xl-0">
                     <i className="bx bx-images"></i>
-                    <h4>Labore consequatur</h4>
-                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    <h4>{qiymat[0].h43}</h4>
+                    <p>{qiymat[0].p4}</p>
                   </div>
                 </div>
               </div>

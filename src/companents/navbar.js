@@ -60,6 +60,10 @@ function Navbar() {
       manzil: "/contact",
       nomi: "Contact"
     },
+    {
+      id:"9",
+      text:"Getaga kirish"
+    }
 ];
   return ( 
     <Router>
@@ -79,7 +83,7 @@ function Navbar() {
           <i className="bi bi-list mobile-nav-toggle"></i>
         </nav>
 
-        <Link to="/courses" className="get-started-btn">Get Started</Link>
+        <Link to="/courses" className="get-started-btn">{qiymat[8].text}</Link>
       </div>
     </header>
      </Router>
