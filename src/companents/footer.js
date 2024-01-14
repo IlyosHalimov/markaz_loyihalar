@@ -2,7 +2,7 @@ function Footer() {
   const qiymat =[
     {
       id:0,
-      name: <h3>Mentor</h3>,
+      name: <h1>Mentor</h1>,
       location:<p>
       A108 Adam Street <br />
       New York, NY 535022<br />

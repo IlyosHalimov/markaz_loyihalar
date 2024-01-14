@@ -2,24 +2,24 @@ function Trainers() {
   const qiymat =[
     {
       id:"1",
-      name:<h4>Walter White</h4>,
-      hobby:<span>Web Development</span>,
+      name:<h4>Abdumo'min / عبد المؤمن</h4>,
+      hobby:<span>React Student</span>,
       izoh:<p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</p>,
-      img: "assets/img/trainers/trainer-1.jpg"
+      img: "assets/img/photo_2024-01-01_18-58-26.jpg"
     },
     {
       id:"2",
-      name:<h4>Sarah Jhinson</h4>,
-      hobby:<span>Marketing</span>,
+      name:<h4>Halimov Ilyos</h4>,
+      hobby:<span>React Student</span>,
       izoh:<p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</p>,
-      img: "assets/img/trainers/trainer-2.jpg"
+      img: "assets/img/Halimov Ilyos.jpg"
     },
     {
       id:"3",
-      name:<h4>Walter White</h4>,
-      hobby:<span>Web Development</span>,
+      name:<h4>Shuhratjon Mamadjonov</h4>,
+      hobby:<span>Fullstack developer</span>,
       izoh:<p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</p>,
-      img: "assets/img/trainers/trainer-3.jpg"
+      img: "assets/img/domlam2 (1).jpg"
     }
   ]
     return ( 
@@ -35,9 +35,9 @@ function Trainers() {
                 {qiymat[0].hobby}
                 {qiymat[0].izoh}
                 <div className="social">
-                  <a href=""><i className="bi bi-twitter"></i></a>
+                  <a href="https://web.telegram.org/k/#@Abdumumin_007"><i className="bi bi-telegram"></i></a>
                   <a href=""><i className="bi bi-facebook"></i></a>
-                  <a href=""><i className="bi bi-instagram"></i></a>
+                  <a href="https://www.instagram.com/abdumumin_blog/"><i className="bi bi-instagram"></i></a>
                   <a href=""><i className="bi bi-linkedin"></i></a>
                 </div>
               </div>
@@ -52,9 +52,9 @@ function Trainers() {
                 {qiymat[1].hobby}
                 {qiymat[1].izoh}
                 <div className="social">
-                  <a href=""><i className="bi bi-twitter"></i></a>
+                  <a href="https://web.telegram.org/k/"><i className="bi bi-telegram"></i></a>
                   <a href=""><i className="bi bi-facebook"></i></a>
-                  <a href=""><i className="bi bi-instagram"></i></a>
+                  <a href="https://www.instagram.com/halimovilyosyoungfullstack.dev/"><i className="bi bi-instagram"></i></a>
                   <a href=""><i className="bi bi-linkedin"></i></a>
                 </div>
               </div>
@@ -69,7 +69,7 @@ function Trainers() {
                 {qiymat[2].hobby}
                 {qiymat[2].izoh}
                 <div className="social">
-                  <a href=""><i className="bi bi-twitter"></i></a>
+                  <a href="https://web.telegram.org/k/#@shMamadjanov"><i className="bi bi-telegram"></i></a>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
                   <a href=""><i className="bi bi-linkedin"></i></a>
