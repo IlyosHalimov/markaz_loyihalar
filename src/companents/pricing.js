@@ -1,5 +1,12 @@
 function Pricing() {
     return ( 
+      <>
+      <div className="breadcrumbs" data-aos="fade-in">
+      <div className="container">
+        <h2>Pricing</h2>
+        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+      </div>
+    </div>
         <section id="pricing" className="pricing">
       <div className="container" data-aos="fade-up">
 
@@ -78,6 +85,7 @@ function Pricing() {
 
       </div>
     </section>
+    </>
      );
 }
 

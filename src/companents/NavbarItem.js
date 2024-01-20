@@ -34,7 +34,7 @@ function NavbarItem({ items }) {
       <>
         {items.submenu ? (
           <li className="dropdown">
-            <a href="/">{items.nomi}</a>
+            <a href="#">{items.nomi}</a>
             <ul>
               {items.submenu.map((submenuItem) => (
                 <li key={submenuItem.id}>

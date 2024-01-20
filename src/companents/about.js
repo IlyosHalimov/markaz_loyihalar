@@ -53,7 +53,8 @@
 
 // About.js
 import React from "react";
-
+import Counts from "./counts";
+import Testimonials from "./Testimonials";
 function About() {
     const qiymat = [
         {
@@ -66,71 +67,53 @@ function About() {
     ];
 
     return (
+        <>
+          <div className="breadcrumbs" data-aos="fade-in">
+      <div className="container">
+        <h2>About Us</h2>
+        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+      </div>
+    </div>
+        {qiymat.map((e)=>
         <section id="about" className="about">
-            <div className="container" data-aos="fade-up">
-                <div className="row">
-                    {qiymat.map((e) => {
-                        return (
-                          <>
-                            <div
-                                className="col-lg-6 order-1 order-lg-2"
-                                data-aos="fade-left"
-                                data-aos-delay="100"
-                            >
-                                <img src={e.img} className="img-fluid" alt="" />
-                            </div>
-                            <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-                         <h3>{e.text}</h3>
-                        <p className="fst-italic">{e.izoh}</p>
-                        <ul>
-                            <li>
-                                <i className="bi bi-check-circle"></i>{" "}
-                                {e.li1}
-                            </li>
-                            <li>
-                                <i className="bi bi-check-circle"></i> Duis aute
-                                irure dolor in reprehenderit in voluptate velit.
-                            </li>
-                            <li>
-                                <i className="bi bi-check-circle"></i>{" "}
-                                {e.izoh}
-                            </li>
-                        </ul>
-                        <p>{e.izoh}</p>
-                    </div>
-                            </>
-                        );
-                    })}
-                    {/* <div
-                        className="col-lg-6 order-1 order-lg-2"
-                        data-aos="fade-left"
-                        data-aos-delay="100"
-                    >
-                        <img src={qiymat[4].img} className="img-fluid" alt="" />
-                    </div>
-                    <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-                        {qiymat[0].h3}
-                        <p className="fst-italic">{qiymat[1].p}</p>
-                        <ul>
-                            <li>
-                                <i className="bi bi-check-circle"></i>{" "}
-                                {qiymat[2].li}
-                            </li>
-                            <li>
-                                <i className="bi bi-check-circle"></i> Duis aute
-                                irure dolor in reprehenderit in voluptate velit.
-                            </li>
-                            <li>
-                                <i className="bi bi-check-circle"></i>{" "}
-                                {qiymat[3].p}
-                            </li>
-                        </ul>
-                        <p>{qiymat[3].p}</p>
-                    </div> */}
+        <div className="container" data-aos="fade-up">
+            <div className="row">
+                        <div
+                            className="col-lg-6 order-1 order-lg-2"
+                            data-aos="fade-left"
+                            data-aos-delay="100"
+                        >
+                            <img src={e.img} className="img-fluid" alt="" />
+                        </div>
+                        <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                     <h3>{e.text}</h3>
+                    <p className="fst-italic">{e.izoh}</p>
+                    <ul>
+                        <li>
+                            <i className="bi bi-check-circle"></i>{" "}
+                            {e.li1}
+                        </li>
+                        <li>
+                            <i className="bi bi-check-circle"></i> Duis aute
+                            irure dolor in reprehenderit in voluptate velit.
+                        </li>
+                        <li>
+                            <i className="bi bi-check-circle"></i>{" "}
+                            {e.izoh}
+                        </li>
+                    </ul>
+                    <p>{e.izoh}</p>
                 </div>
-            </div>
-        </section>
-    );
-}
-
+                </div>
+        </div>
+    </section>
+ 
+    
+        )}
+           <Counts/>
+           <Testimonials />
+        </>
+    )
+        
+    }
 export default About;

@@ -1,10 +1,12 @@
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import NavbarItem from './NavbarItem';
+import Hero from './hero';
+
 function Navbar() {
   const qiymat  = [
     {
       id:"1",
-      manzil:"/",
+      manzil:"/home",
       nomi:"Home"
     },
     {
@@ -19,12 +21,12 @@ function Navbar() {
     },
     {
       id:"4",
-      manzil: "/frontend/src/companents/trainers",
+      manzil: "/trainers",
       nomi: "Trainers"
     },
     {
       id:"5",
-      manzil: "e/vents",
+      manzil: "/events",
       nomi: "Events"
     },
     {
@@ -66,7 +68,7 @@ function Navbar() {
     }
 ];
   return ( 
-    <Router>
+
     <header id="header" className="fixed-top">
       <div className="container d-flex align-items-center">
         <h1 className="logo me-auto"><Link to="/">Mentor</Link></h1>
@@ -86,7 +88,7 @@ function Navbar() {
         <Link to="/courses" className="get-started-btn">{qiymat[8].text}</Link>
       </div>
     </header>
-     </Router>
+    
   );
 }
 
