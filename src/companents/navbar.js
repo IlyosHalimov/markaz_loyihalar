@@ -1,12 +1,11 @@
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Link} from 'react-router-dom';
 import NavbarItem from './NavbarItem';
-import Hero from './hero';
 
 function Navbar() {
   const qiymat  = [
     {
       id:"1",
-      manzil:"/home",
+      manzil:"/",
       nomi:"Home"
     },
     {

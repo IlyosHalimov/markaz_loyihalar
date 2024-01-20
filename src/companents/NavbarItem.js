@@ -1,5 +1,5 @@
 // function NavbarItem({items}) {
-//     return ( 
+//     return (
 //         <>
 //         {
 //             items.submenu ? (
@@ -22,7 +22,8 @@
 //         </li>
 //             )
 //         }
-        
+
+import { Link } from "react-router-dom";
 
 //         </>
 //      );
@@ -31,28 +32,29 @@
 // export default NavbarItem;
 function NavbarItem({ items }) {
     return (
-      <>
-        {items.submenu ? (
-          <li className="dropdown">
-            <a href="#">{items.nomi}</a>
-            <ul>
-              {items.submenu.map((submenuItem) => (
-                <li key={submenuItem.id}>
-                  <a href={submenuItem.manzil}>{submenuItem.nomi}</a>
+        <>
+            {items.submenu ? (
+                <li className="dropdown">
+                    <Link to="#">{items.nomi}</Link>
+                    <ul>
+                        {items.submenu.map((submenuItem) => (
+                            <li key={submenuItem.id}>
+                                <Link to={submenuItem.manzil}>
+                                    {submenuItem.nomi}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
                 </li>
-              ))}
-            </ul>
-          </li>
-        ) : (
-          <li>
-            <a className="active" href={items.manzil}>
-              {items.nomi}
-            </a>
-          </li>
-        )}
-      </>
+            ) : (
+                <li>
+                    <Link className="active" to={items.manzil}>
+                        {items.nomi}
+                    </Link>
+                </li>
+            )}
+        </>
     );
-  }
-  
-  export default NavbarItem;
-  
+}
+
+export default NavbarItem;
