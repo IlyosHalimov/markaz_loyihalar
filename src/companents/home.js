@@ -1,13 +1,25 @@
+import HeroItem from "./HeroItem";
 function Home() {
+  const qiymat = [
+    {
+      id: "1",
+      text: <h1>Learning Today,<br />Leading Tomorrow</h1>,
+      text1: "We are a team of talented designers making websites with Bootstrap",
+      btn: <a href="/courses.html" className="btn-get-started">
+      Get Started
+    </a>
+    }
+    
+  ];
     return ( 
         <>
-        <section id="hero" classNameName="d-flex justify-content-center align-items-center">
-        <div classNameName="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-          <h1>Learning Today,<br />Leading Tomorrow</h1>
-          <h2>We are team of talented designers making websites with Bootstrap</h2>
-          <a href="courses.html" classNameName="btn-get-started">Get Started</a>
-        </div>
-      </section>
+        <section id="hero" className="d-flex justify-content-center align-items-center">
+      <div className="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+        <HeroItem text={qiymat.map(e => e.text)} />
+        <HeroItem text1={qiymat.map(e => e.text1)} />
+        <HeroItem btn={qiymat.map(e => e.btn)} />
+      </div>
+    </section>
       <main id="main">
 
       
