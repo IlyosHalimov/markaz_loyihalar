@@ -48,9 +48,11 @@ function NavbarItem({ items }) {
                 </li>
             ) : (
                 <li>
-                    <Link className="active" to={items.manzil}>
+                  
+                    <Link  to={items.manzil}>
                         {items.nomi}
                     </Link>
+                
                 </li>
             )}
         </>

@@ -1,6 +1,32 @@
+import {useState} from 'react';
+import M from 'materialize-css';
 function Contact() {
+  const [name , setName] = useState("");
+  const [email , setEmail] = useState("");
+  const [subject , setSubject] = useState("");
+  const [message , setMessage] = useState("");
+  const getPost = ()=>{
+    
+    if(!name || !email || !subject || !message){
+      console.log("Barcha maydonlar to'ldirilishi zarur");
+    }
+    else{
+      if(
+        !/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)){
+          console.log("Email manzilingizni to'g'ri kiriting");
+        M.toast({html:"Email manzilingizni to'g'ri kiriting", classes:"#d81b60 pink darken-1"});
+        return
+      }
+      else{
+        console.log(name);
+      console.log(email);
+      console.log(subject);
+      console.log(message);
+      }
+    }
+  }
     return ( 
-        <main id="main">
+        <main>
 
     
     <div className="breadcrumbs" data-aos="fade-in">
@@ -46,20 +72,52 @@ function Contact() {
 
           <div className="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+            <div className="php-email-form">
               <div className="row">
                 <div className="col-md-6 form-group">
-                  <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
+                  <input 
+                  type="text" 
+                  name="name" 
+                  className="form-control" 
+                  id="name" 
+                  placeholder="Your Name" 
+                  required 
+                  value={name}
+                  onChange={(e)=>setName(e.target.value)}
+                  />
                 </div>
                 <div className="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" required />
+                  <input 
+                  type="email" 
+                  className="form-control" 
+                  name="email" 
+                  id="email" 
+                  placeholder="Your Email" 
+                  value={email}
+                  onChange={(e)=>setEmail(e.target.value)} 
+                  />
                 </div>
               </div>
               <div className="form-group mt-3">
-                <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" required />
+                <input 
+                type="text" 
+                className="form-control" 
+                name="subject" 
+                id="subject" 
+                placeholder="Subject" 
+                value={subject}
+                  onChange={(e)=>setSubject(e.target.value)} 
+                />
               </div>
               <div className="form-group mt-3">
-                <textarea className="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea 
+                className="form-control" 
+                name="message" 
+                rows="5" 
+                placeholder="Message" 
+                value={message}
+                  onChange={(e)=>setMessage(e.target.value)}
+                ></textarea>
               </div>
               <div className="my-3">
                 <div className="loading">Loading</div>
@@ -67,7 +125,8 @@ function Contact() {
                 <div className="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div className="text-center"><button type="submit">Send Message</button></div>
-            </form>
+              <button onClick={()=>getPost()}>Yuborish</button>
+            </div>
 
           </div>
 
