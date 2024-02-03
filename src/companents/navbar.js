@@ -6,37 +6,37 @@ function Navbar() {
     {
       id:"1",
       manzil:"/",
-      nomi:"Home"
+      nomi:"Bosh sahifa"
     },
     {
       id:"2",
       manzil: "/about",
-      nomi: "About"
+      nomi: "Haqida"
     },
     {
       id:"3",
       manzil: "/courses",
-      nomi: "Courses"
+      nomi: "Kurslar"
     },
     {
       id:"4",
       manzil: "/trainers",
-      nomi: "Trainers"
+      nomi: "Trenerlar"
     },
     {
       id:"5",
       manzil: "/events",
-      nomi: "Events"
+      nomi: "O'zgarishlar"
     },
     {
       id: "6",
       manzil: "/pricing",
-      nomi: "Pricing",
+      nomi: "Narxlash",
     },
     {
       id:"7",
       manzil:"#",
-      nomi:"Dropdown",
+      nomi:"Ro'yxat",
       submenu:[
         {
           manzil:"/react",
@@ -57,14 +57,15 @@ function Navbar() {
       ]
     },
     {
-      id:"8",
+      id: "7",
       manzil: "/contact",
-      nomi: "Contact"
+      nomi: "Aloqa"
     },
     {
-      id:"9",
-      text:"Getaga kirish"
-    }
+      id:"8",
+      manzil: "/menu",
+      nomi: "Signin",
+    },
 ];
   return ( 
 
@@ -84,7 +85,7 @@ function Navbar() {
           <i className="bi bi-list mobile-nav-toggle"></i>
         </nav>
 
-        <Link to="/courses" className="get-started-btn">{qiymat[8].text}</Link>
+        {/* <Link to="/menu" className="get-started-btn">{qiymat[8].text}</Link> */}
       </div>
     </header>
     

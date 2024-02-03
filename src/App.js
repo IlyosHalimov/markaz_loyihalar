@@ -14,6 +14,7 @@ import Pricing from "./companents/pricing";
 import Events from './companents/events';
 import Testimonials from './companents/Testimonials';
 import Home from './companents/home';
+import Menu from './companents/menu';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/events" component={Events} />
         <Route path="/pricing" component={Pricing} />
         <Route path="/contact" component={Contact} />
+        <Route path="/menu" component={Menu} />
        </Switch>
       <Footer />
     </Router>

@@ -35,7 +35,7 @@ function NavbarItem({ items }) {
         <>
             {items.submenu ? (
                 <li className="dropdown">
-                    <Link to="#">{items.nomi}</Link>
+                    <Link to="/">{items.nomi}</Link>
                     <ul>
                         {items.submenu.map((submenuItem) => (
                             <li key={submenuItem.id}>
@@ -52,7 +52,8 @@ function NavbarItem({ items }) {
                     <Link  to={items.manzil}>
                         {items.nomi}
                     </Link>
-                
+                    
+                    
                 </li>
             )}
         </>

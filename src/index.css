@@ -1,55 +1,55 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
 }
 
-.ri-store-line{
-  color: #ffbb2c;
+.ri-store-line {
+    color: #ffbb2c;
 }
-.ri-bar-chart-box-line{
-  color: #5578ff;
+.ri-bar-chart-box-line {
+    color: #5578ff;
 }
-.ri-calendar-todo-line{
-  color: #e80368;
+.ri-calendar-todo-line {
+    color: #e80368;
 }
-.ri-paint-brush-line{
-  color: #e361ff;
+.ri-paint-brush-line {
+    color: #e361ff;
 }
-.ri-database-2-line{
-  color: #47aeff;
+.ri-database-2-line {
+    color: #47aeff;
 }
-.ri-gradienter-line{
-  color: #ffa76e;
+.ri-gradienter-line {
+    color: #ffa76e;
 }
-.ri-file-list-3-line{
-  color: #11dbcf;
+.ri-file-list-3-line {
+    color: #11dbcf;
 }
-.ri-price-tag-2-line{
-  color: #4233ff;
+.ri-price-tag-2-line {
+    color: #4233ff;
 }
-.ri-anchor-line{
-  color: #b2904f;
+.ri-anchor-line {
+    color: #b2904f;
 }
-.ri-disc-line{
-  color: #b20969;
+.ri-disc-line {
+    color: #b20969;
 }
-.ri-base-station-line{
-  color: #ff5828;
+.ri-base-station-line {
+    color: #ff5828;
 }
-.ri-fingerprint-line{
-  color: #29cc61;
+.ri-fingerprint-line {
+    color: #29cc61;
 }
-iframe{
-  border: 0;
-  width: 100%;
-  height: 350px;
+iframe {
+    border: 0;
+    width: 100%;
+    height: 350px;
 }

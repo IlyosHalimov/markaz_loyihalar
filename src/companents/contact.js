@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import M from 'materialize-css';
+// import M from 'materialize-css';
 function Contact() {
   const [name , setName] = useState("");
   const [email , setEmail] = useState("");
@@ -14,7 +14,7 @@ function Contact() {
       if(
         !/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)){
           console.log("Email manzilingizni to'g'ri kiriting");
-        M.toast({html:"Email manzilingizni to'g'ri kiriting", classes:"#d81b60 pink darken-1"});
+        // M.toast({html:"Email manzilingizni to'g'ri kiriting", classes:"#d81b60 pink darken-1"});
         return
       }
       else{
@@ -124,8 +124,8 @@ function Contact() {
                 <div className="error-message"></div>
                 <div className="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div className="text-center"><button type="submit">Send Message</button></div>
-              <button onClick={()=>getPost()}>Yuborish</button>
+              <div onClick={()=>getPost()} className="text-center"><button type="submit">Send Message</button></div>
+              {/* <button onClick={()=>getPost()}>Yuborish</button> */}
             </div>
 
           </div>
